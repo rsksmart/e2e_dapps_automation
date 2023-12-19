@@ -1,0 +1,7 @@
+{
+    "recommendations": [
+        "wayou.vscode-todo-highlight",
+        "muralidharan92.cuke-step-definition-generator",
+        "dbaeumer.vscode-eslint"
+    ]
+}

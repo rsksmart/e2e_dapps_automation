@@ -1,0 +1,28 @@
+{
+  "name": "cucumber-playwright-js",
+  "version": "1.0.0",
+  "description": "E2E Browser Automation using Cucumber+Playwright in JavaScript",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/javicoin/cucumber-playwright-js"
+  },
+  "scripts": {
+    "test": "cucumber-js test"
+  },
+  "type": "module",
+  "keywords": [
+    "cucumber",
+    "playwright"
+  ],
+  "author": "javicoin",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.0.0",
+    "@playwright/test": "^1.39.0",
+    "@synthetixio/synpress": "^3.7.2-beta.8"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}
