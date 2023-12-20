@@ -1,0 +1,22 @@
+{
+    "featuresPath": "src/test/features/_dappLivingDocumentation",
+    "format": "cucumber",
+    "filter": "11817",
+    "keys": "",
+    "testExecInfo": {
+        "fields": {
+            "project": {
+                "key": "QACT"
+            },
+            "summary": "Test Execution for dApp cucumber tests",
+            "issuetype": {
+                "name": "Test Execution"
+            },
+            "description": "Contains test automation results"
+        },
+        "xrayFields": {
+            "testPlanKey": "QACT-294",
+            "environments": []
+        }
+    }
+}

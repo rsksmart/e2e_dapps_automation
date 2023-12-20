@@ -1,28 +1,41 @@
 {
-  "name": "cucumber-playwright-js",
-  "version": "1.0.0",
-  "description": "E2E Browser Automation using Cucumber+Playwright in JavaScript",
+  "name": "e2e_dapps_automation",
+  "version": "1.0.1",
+  "description": "E2E Browser Automation for web3 dApps using Cucumber+Playwright+Synpress in JavaScript",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/javicoin/cucumber-playwright-js"
+    "url": "https://github.com/rsksmart/e2e_dapps_automation"
+  },
+  "config": {
+    "cucumberConfig": "config/xray/cucumber.config.json"
   },
   "scripts": {
-    "test": "cucumber-js test"
+    "npm:install": "npm i",
+    "run:test": "cucumber-js test",
+    "cucumber:download_features": "npx run-func ./node_modules/@xray-app/xray-automation/src/helpers/xray-helper.js downloadCucumberFeatures $npm_package_config_cucumberConfig",
+    "cucumber:upload_features": "npx run-func ./node_modules/@xray-app/xray-automation/src/helpers/xray-helper.js uploadCucumberFeatures $npm_package_config_cucumberConfig",
+    "cucumber:submit_results": "npx run-func ./node_modules/@xray-app/xray-automation/src/helpers/xray-helper.js submitCucumberTestResults ${npm_config_reports} $npm_package_config_cucumberConfig"
   },
   "type": "module",
   "keywords": [
     "cucumber",
-    "playwright"
+    "playwright",
+    "synpress",
+    "dapp",
+    "automation",
+    "metamask"
   ],
-  "author": "javicoin",
+  "author": "IOV Labs QA Team",
   "license": "ISC",
   "devDependencies": {
-    "@cucumber/cucumber": "^10.0.0",
-    "@playwright/test": "^1.39.0",
-    "@synthetixio/synpress": "^3.7.2-beta.8"
+    "@cucumber/cucumber": "^10.0.1",
+    "@playwright/test": "^1.40.1",
+    "@synthetixio/synpress": "^3.7.2-beta.9",
+    "@xray-app/xray-automation": "git+https://github.com/rsksmart/xray-automation"
   },
   "dependencies": {
-    "dotenv": "^16.3.1"
+    "dotenv": "^16.3.1",
+    "run-func": "^3.0.0"
   }
 }
