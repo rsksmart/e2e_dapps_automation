@@ -54,7 +54,7 @@ Feel free to build your test suite at `src/test/features/_dappLivingDocumentatio
 ## XRay integration
 ### Downloading/Uploading Cucumber features & Creating Test Executions in Jira
 
-- In order to submit the local test execution to Jira, execute `npm run cucumber:submit_results --reports="reports/json"` in the console. Remember to configure the `config/xray/cucumber.config.json` accordingly and have set the Jira XRay credentials in your environment variables.
+- In order to submit the local test execution to Jira, execute `cucumber:submit_results` script. Remember to configure the `config/xray/cucumber.config.json` accordingly and have set the Jira XRay credentials in your environment variables.
 
 Please refer to the repository [@xray-app/xray-automation module](https://github.com/rsksmart/xray-automation) to learn more about XRay Jira integration.
 

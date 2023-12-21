@@ -8,14 +8,15 @@
     "url": "https://github.com/rsksmart/e2e_dapps_automation"
   },
   "config": {
-    "cucumberConfig": "config/xray/cucumber.config.json"
+    "cucumberConfig": "config/xray/cucumber.config.json",
+    "reports": "reports/json"
   },
   "scripts": {
     "npm:install": "npm i",
     "run:test": "cucumber-js test",
     "cucumber:download_features": "npx run-func ./node_modules/@xray-app/xray-automation/src/helpers/xray-helper.js downloadCucumberFeatures $npm_package_config_cucumberConfig",
     "cucumber:upload_features": "npx run-func ./node_modules/@xray-app/xray-automation/src/helpers/xray-helper.js uploadCucumberFeatures $npm_package_config_cucumberConfig",
-    "cucumber:submit_results": "npx run-func ./node_modules/@xray-app/xray-automation/src/helpers/xray-helper.js submitCucumberTestResults ${npm_config_reports} $npm_package_config_cucumberConfig"
+    "cucumber:submit_results": "npx run-func ./node_modules/@xray-app/xray-automation/src/helpers/xray-helper.js submitCucumberTestResults $npm_package_config_reports $npm_package_config_cucumberConfig"
   },
   "type": "module",
   "keywords": [
