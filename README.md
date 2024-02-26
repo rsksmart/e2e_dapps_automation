@@ -7,7 +7,7 @@ Support for other wallets is being added at [Synpress New Dawn](https://github.c
 - [E2E Browser Automation for web3 dApps](#e2e-browser-automation-for-web3-dapps)
     - [Project Structure](#project-structure)
     - [Installation](#installation)
-      - [dApp & Blockchain configutation](#dapp--blockchain-configutation)
+      - [dApp & Blockchain configuration](#dapp--blockchain-configuration)
     - [Running Tests🚀](#running-tests-)
     - [Reporting 📊](#reporting-)
     - [XRay Integration](#xray-integration)
@@ -59,7 +59,7 @@ const metamaskPath = await prepareMetamask(
 );
 ```
 
-### dApp & Blockchain configutation
+### dApp & Blockchain configuration
 
 - In order to be able to test your own dApp on your preferred blockchain, go to `config/config.js` and modify the following parameters:
 
