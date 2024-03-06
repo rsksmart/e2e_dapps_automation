@@ -18,8 +18,7 @@ Support for other wallets is being added at [Synpress New Dawn](https://github.c
 ```
 e2e_dapps_automation/
  ├── config/
- │    ├── xray/
- │         ├── cucumber.config.json             # XRay project configuration to upload tests/results to Jira XRay
+ │    ├── config.js                             # Stores and asigns global vars such as dApp under test or blockchain network
  │    ├── .env                                  # private local file to store wallet seeds (testing purposes)
  ├── src/
  │    ├── hooks/                                
@@ -29,10 +28,9 @@ e2e_dapps_automation/
  │         ├── demo.page.js                     # PageObject class with elements & methods 
  │    ├── test/
  │         ├── features/                        # Cucumber framework features folder
- │              ├── _dappLivingDocumentation/
- │                   ├── 1_QACT-292.feature     # Demo feature with end-to-end scenarios
+ │              ├── Demo.feature                # Demo feature with end-to-end scenarios
  │         ├── stepDefinitions          
- │              ├── login.steps.js              # Class to model behaviors, connects test layer with page methods
+ │              ├── demo.steps.js               # Class to model behaviors, connects test layer with page methods
  | cucumber.json                                # Cucumber config file
 ```
 

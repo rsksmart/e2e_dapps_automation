@@ -49,9 +49,7 @@ async function metamaskConfig() {
     });
 
     // await use(context);
-
     // await context.close();
-
     // await resetState();
   
 }

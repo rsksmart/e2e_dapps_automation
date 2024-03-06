@@ -1,5 +1,7 @@
 class DemoPage {
 
+	// Page elements
+	
 	get btnConnectWallet() {
 		return page.locator('[id="btn-core-connect-wallet"]');
 	}
@@ -7,6 +9,8 @@ class DemoPage {
 	get btnConnectMetamask() {
 		return page.locator('.wallet-button-styling .svelte-1vlog3j').first();
 	}
+
+	// Methods
 
 	async navigateToDapp(url) {
 		await page.goto(url);

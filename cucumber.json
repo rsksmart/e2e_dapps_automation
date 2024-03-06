@@ -4,7 +4,7 @@
             "snippetInterface": "async-await"
         },
         "paths": [
-            "src/test/features/_dappLivingDocumentation"
+            "src/test/features"
         ],
         "import": [
             "src/hooks/fixtures.js",
