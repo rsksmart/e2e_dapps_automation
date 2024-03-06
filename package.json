@@ -7,10 +7,6 @@
     "type": "git",
     "url": "https://github.com/rsksmart/e2e_dapps_automation"
   },
-  "config": {
-    "cucumberConfig": "config/xray/cucumber.config.json",
-    "reports": "reports/json"
-  },
   "scripts": {
     "npm:install": "npm i",
     "run:test": "cucumber-js test"

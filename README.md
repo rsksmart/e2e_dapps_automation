@@ -10,7 +10,6 @@ Support for other wallets is being added at [Synpress New Dawn](https://github.c
       - [dApp & Blockchain configuration](#dapp--blockchain-configuration)
     - [Running Tests🚀](#running-tests-)
     - [Reporting 📊](#reporting-)
-    - [XRay Integration](#xray-integration)
     - [Sources 📚](#sources)
 
 ## Project Structure
@@ -86,13 +85,6 @@ Feel free to build your test suite at `src/test/features/_dappLivingDocumentatio
 - Generated reports will be located at `reports` folder
 - Since Cucumber is the chosen runner, reports and other config options can be found at `e2e_dapps_automation/cucumber.json`
 
-## XRay integration
-### Downloading/Uploading Cucumber features & Creating Test Executions in Jira
-
-- In order to submit the local test execution to Jira, execute `cucumber:submit_results` script. Remember to configure the `config/xray/cucumber.config.json` accordingly and have set the Jira XRay credentials in your environment variables.
-
-Please refer to the repository [@xray-app/xray-automation module](https://github.com/rsksmart/xray-automation) to learn more about XRay Jira integration.
-
 
 ## Sources
 
@@ -100,7 +92,3 @@ Please refer to the repository [@xray-app/xray-automation module](https://github
 - [Cucumber](https://cucumber.io/docs/cucumber/)
 - [Synpress](https://github.com/Synthetixio/synpress)
 - [Synpress New Dawn](https://github.com/Synthetixio/synpress/tree/new-dawn)
-
-## Next steps
-- Playwright/Synpress wrappers & helpers
-- Synpress New Dawn branch integration
