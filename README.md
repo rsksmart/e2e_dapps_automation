@@ -42,7 +42,7 @@ e2e_dapps_automation/
 - Create a `.env` file inside `config` folder containing your MetaMask wallet address information (seed & password) as follows. Example:
 
 ```
-secretWordsOrPrivateKey=test test test test test test test test test test test test
+secretWordsOrPrivateKey=test test test test test test test test test test test junk
 password=Tester@1234
 ```
 
