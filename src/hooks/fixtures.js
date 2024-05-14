@@ -38,7 +38,7 @@ async function metamaskConfig() {
     });
 
     // wait for metamask
-    await context.pages()[0].waitForTimeout(3000);
+    // await context.pages()[0].waitForTimeout(2000);
 
     // setup metamask
     await initialSetup(chromium, {
@@ -51,7 +51,6 @@ async function metamaskConfig() {
     // await use(context);
     // await context.close();
     // await resetState();
-  
 }
 
 export default metamaskConfig;

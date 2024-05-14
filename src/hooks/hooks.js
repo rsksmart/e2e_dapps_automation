@@ -7,8 +7,14 @@ BeforeAll({timeout: 60 * 1000}, async function () {
 });
 
 Before(async function () {
-    console.log("Create new context page for dApp interaction");
-    global.page = await global.context.newPage();
+    console.log("Selecting page context for dApp interaction");
+    // Loading our dApp in a new tab
+    // global.page = await global.context.newPage();
+    
+    // Reusing initial blank tab for our dApp
+    global.page = await global.context.pages()[0];
+    const mainWindow = global.page;
+    await mainWindow.bringToFront();
 });
 
 After(async function () {

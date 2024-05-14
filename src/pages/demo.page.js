@@ -3,11 +3,11 @@ class DemoPage {
 	// Page elements
 	
 	get btnConnectWallet() {
-		return page.locator('[id="btn-core-connect-wallet"]');
+		return page.getByText('Connect wallet');
 	}
-
-	get btnConnectMetamask() {
-		return page.locator('.wallet-button-styling .svelte-1vlog3j').first();
+	
+	get btnBrowserWallet() {
+		return page.getByText('Browser Wallet');
 	}
 
 	// Methods
@@ -18,7 +18,7 @@ class DemoPage {
 
 	async connectWallet(){
 		await this.btnConnectWallet.click();
-		await this.btnConnectMetamask.click();
+		await this.btnBrowserWallet.click();
 	}
 }
 
