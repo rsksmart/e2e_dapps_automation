@@ -8,7 +8,7 @@ const envPath = path.resolve(__dirname, '.env');
 dotenv.config({ path: envPath });
 
 // dApp under test
-const dAppURL = 'https://wallet.testnet.rollup.rif.technology/';
+const dAppURL = 'https://rootstock-testnet.blockscout.com/';
 
 // Custom network under test
 const networkConfiguration = {
