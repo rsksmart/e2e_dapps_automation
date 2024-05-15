@@ -20,12 +20,12 @@
     "automation",
     "metamask"
   ],
-  "author": "IOV Labs QA Team",
+  "author": "RootstockLabs - QA Team",
   "license": "ISC",
   "devDependencies": {
     "@cucumber/cucumber": "^10.0.1",
-    "@playwright/test": "^1.40.1",
-    "@synthetixio/synpress": "^3.7.2-beta.9"
+    "@playwright/test": "1.40.1",
+    "@synthetixio/synpress": "3.7.2-beta.9"
   },
   "dependencies": {
     "dotenv": "^16.3.1"
