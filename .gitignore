@@ -7,4 +7,4 @@ src/test/features/_*LivingDocumentation_backup
 # Do not remove the following line or you could end up publishing sensitive information
 config/.env
 .env*
-
+.cache-synpress

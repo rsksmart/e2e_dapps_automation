@@ -7,10 +7,10 @@
             "src/test/features"
         ],
         "import": [
-            "src/hooks/fixtures.js",
             "config/config.js",
             "src/hooks/hooks.js",
-            "src/test/steps/*.steps.js"
+            "src/test/steps/*.steps.js",
+            "src/test/wallet-setup/metamask.default.setup.js"
         ],
         "dryRun": false,
         "format": [
