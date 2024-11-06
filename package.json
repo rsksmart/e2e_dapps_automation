@@ -9,7 +9,7 @@
   },
   "scripts": {
     "npm:install": "rm -rf package-lock.json node_modules && npm cache clean --force && npm install",
-    "run:test": "cucumber-js test --tags '@regression'"
+    "test": "cucumber-js test --tags '@regression'"
   },
   "type": "module",
   "keywords": [
