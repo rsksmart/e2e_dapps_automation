@@ -8,6 +8,10 @@ jobs:
   test:
     timeout-minutes: 10
     runs-on: ubuntu-latest
+    env:
+      # Load secrets into environment variables
+      password: ${{ secrets.PASSWORD }}
+      secretWordsOrPrivateKey: ${{ secrets.SECRETWORDSORPRIVATEKEY }}
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-node@v4
@@ -18,7 +22,7 @@ jobs:
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Run Cucumber-Playwright tests
-      run: npm test
+      run: xvfb-run npx cucumber-js test --tags '@regression'
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
