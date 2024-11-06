@@ -5,20 +5,16 @@ class DemoPage {
 	get btnConnectWallet() {
 		return page.getByText('Connect wallet');
 	}
-	
-	get btnBrowserWallet() {
-		return page.getByText('Browser Wallet');
+
+	get btnAgreeTerms() {
+		return page.getByText('I Agree');
 	}
 
 	// Methods
 
-	async navigateToDapp(url) {
-		await page.goto(url);
-	}
-
 	async connectWallet(){
 		await this.btnConnectWallet.click();
-		await this.btnBrowserWallet.click();
+		await this.btnAgreeTerms.click();
 	}
 }
 
