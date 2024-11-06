@@ -8,6 +8,10 @@ jobs:
   test:
     timeout-minutes: 10
     runs-on: ubuntu-latest
+    env:
+      # Load secrets into environment variables
+      password: ${{ secrets.PASSWORD }}
+      secretWordsOrPrivateKey: ${{ secrets.SECRETWORDSORPRIVATEKEY }}
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-node@v4
