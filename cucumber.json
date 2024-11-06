@@ -7,8 +7,8 @@
             "src/test/features"
         ],
         "import": [
-            "src/hooks/fixtures.js",
             "config/config.js",
+            "src/hooks/fixtures.js",
             "src/hooks/hooks.js",
             "src/test/steps/*.steps.js"
         ],

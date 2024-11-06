@@ -1,28 +1,22 @@
-import { fileURLToPath } from 'url';
-import path from 'path';
-import dotenv from 'dotenv';
-import { expect } from "@playwright/test";
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const envPath = path.resolve(__dirname, '.env');
-dotenv.config({ path: envPath });
+import 'dotenv/config';
+import { expect } from '@playwright/test';
 
 // dApp under test
-const dAppURL = 'https://rootstock-testnet.blockscout.com/';
+const dAppURL = 'https://app.rootstockcollective.xyz/';
 
 // Custom network under test
 const networkConfiguration = {
   networkName: 'Rootstock',
-  rpcUrl: 'https://public-node.testnet.rsk.co',
-  chainId: '31',
+  rpcUrl: 'https://public-node.rsk.co',
+  chainId: '30',
   symbol: 'RBTC',
-  isTestnet: true
+  isTestnet: false
 }
 
 Object.assign(global, {
-    expect: expect,
-    BASE_URL: dAppURL,
-    NETWORK: networkConfiguration,
-    SECRET: process.env.secretWordsOrPrivateKey,
-    PASSWORD: process.env.password
+  expect: expect,
+  BASE_URL: dAppURL,
+  NETWORK: networkConfiguration,
+  SECRET: process.env.secretWordsOrPrivateKey,
+  PASSWORD: process.env.password
 });

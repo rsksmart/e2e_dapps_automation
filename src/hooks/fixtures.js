@@ -1,7 +1,7 @@
-import { chromium } from "@playwright/test";
+import { chromium } from '@playwright/test';
 import initialSetup_pkg from '@synthetixio/synpress/commands/metamask.js';
 import setExpectInstance_pkg from '@synthetixio/synpress/commands/playwright.js';
-import prepareMetamask_pkg from "@synthetixio/synpress/helpers.js";
+import prepareMetamask_pkg from '@synthetixio/synpress/helpers.js';
 
 const { setExpectInstance } = setExpectInstance_pkg;
 const { initialSetup } = initialSetup_pkg;
@@ -13,7 +13,7 @@ async function metamaskConfig() {
 
     // download metamask
     const metamaskPath = await prepareMetamask(
-      process.env.METAMASK_VERSION || "10.25.0"
+      process.env.METAMASK_VERSION || "11.15.0"
     );
 
     // prepare browser args
@@ -38,7 +38,7 @@ async function metamaskConfig() {
     });
 
     // wait for metamask
-    await context.pages()[0].waitForTimeout(2000);
+    await context.pages()[0].waitForTimeout(3000);
 
     // setup metamask
     await initialSetup(chromium, {
@@ -47,10 +47,6 @@ async function metamaskConfig() {
       password: global.PASSWORD,
       enableAdvancedSettings: true,
     });
-
-    // await use(context);
-    // await context.close();
-    // await resetState();
 }
 
 export default metamaskConfig;

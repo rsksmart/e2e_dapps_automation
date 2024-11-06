@@ -1,6 +1,6 @@
 {
   "name": "e2e_dapps_automation",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "E2E Browser Automation for web3 dApps using Cucumber+Playwright+Synpress in JavaScript",
   "main": "index.js",
   "repository": {
@@ -8,8 +8,8 @@
     "url": "https://github.com/rsksmart/e2e_dapps_automation"
   },
   "scripts": {
-    "npm:install": "npm i",
-    "run:test": "cucumber-js test"
+    "npm:install": "rm -rf package-lock.json node_modules && npm cache clean --force && npm install",
+    "run:test": "cucumber-js test --tags '@regression'"
   },
   "type": "module",
   "keywords": [
@@ -20,14 +20,14 @@
     "automation",
     "metamask"
   ],
-  "author": "RootstockLabs - QA Team",
+  "author": "RootstockLabs QA Team",
   "license": "ISC",
   "devDependencies": {
     "@cucumber/cucumber": "^10.0.1",
-    "@playwright/test": "1.40.1",
-    "@synthetixio/synpress": "3.7.2-beta.9"
+    "@playwright/test": "^1.37.0",
+    "@synthetixio/synpress": "3.7.3"
   },
   "dependencies": {
-    "dotenv": "^16.3.1"
+    "dotenv": "16.4.5"
   }
 }
